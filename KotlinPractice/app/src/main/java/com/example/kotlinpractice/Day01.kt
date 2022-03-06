@@ -1,6 +1,6 @@
 package com.example.kotlinpractice
 
-fun main(){
+fun main() {
 
     // 자료형 변환
     val a: Int = 66
@@ -27,7 +27,8 @@ fun main(){
     val i: Int = 128
     val j: Int? = 128
 
-    println(i==j)
-    println(i===j)
+    println(i == j)
+    println(i === j)
+
 
 }
