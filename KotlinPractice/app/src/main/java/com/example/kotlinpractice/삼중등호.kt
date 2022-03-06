@@ -1,8 +1,8 @@
 package com.example.kotlinpractice
 
 fun main(args: Array<String>) {
-    val a: Int = 128
-    val b: Int? = 128
+    val a: Int = 130
+    val b: Int? = 130
     println(a === b)
 
     val c: Int? = a
