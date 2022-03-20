@@ -21,7 +21,12 @@ fun outfunc(name: String): Unit {    //: Unit 생략 가능
 
 //default가 지정된 함수
 fun min(a: Int, b: Int = 100) = if (a > b) b else a
-
+//
+fun normalVarargs(vararg a: Int){
+    for(num in a){
+        print("$num ")
+    }
+}
 fun main() {
 
     val result1 = sum(2, 3)
@@ -41,5 +46,6 @@ fun main() {
     val result4 = min(50)
     println(result4)
 
-
+    normalVarargs(1)
+    normalVarargs(1, 2, 3, 4, 5)
 }

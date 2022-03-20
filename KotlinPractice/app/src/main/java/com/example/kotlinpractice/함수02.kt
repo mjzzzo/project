@@ -1,12 +1,10 @@
 package com.example.kotlinpractice
-
-fun normalVarargs(vararg a: Int){
-    for(num in a){
-        print("$num ")
-    }
+//람다식 이용하기
+fun highFunc(a: Int, b: Int, sum: (Int, Int) -> Int): Int {
+    return sum(a, b)
 }
-fun main() {
-    normalVarargs(1)
-    normalVarargs(1, 2, 3, 4, 5)
 
+fun main() {
+    val result = highFunc(21, 25) { x, y -> x + y }
+    println(result)
 }
